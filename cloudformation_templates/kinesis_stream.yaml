@@ -1,0 +1,9 @@
+Description: Stack for Kinesis Stream.
+
+Resources:
+  kinesisstream:
+    Type: AWS::Kinesis::Stream
+    Properties: 
+      Name: OrderInfoStream
+      RetentionPeriodHours: 24
+      ShardCount: 1
